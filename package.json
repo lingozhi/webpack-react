@@ -1,0 +1,8 @@
+{
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lingozhi/webpack-react.git",
+  "author": "chen.lingzhi <chen.lingzhi@qkupower.com>",
+  "license": "MIT"
+}
