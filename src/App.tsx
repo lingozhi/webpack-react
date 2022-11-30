@@ -21,7 +21,7 @@ const PreloadDemo = lazy(
 
 function App() {
     const [show, setShow] = useState(false);
-    const a = 5;
+    // const a = 5;
     const onClick = () => {
         setShow(true);
     };
