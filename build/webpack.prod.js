@@ -83,4 +83,8 @@ module.exports = merge(baseConfig, {
             minRatio: 0.8, // 压缩率,默认值是 0.8
         }),
     ],
+    performance: {
+        maxEntrypointSize: 2000000,
+        maxAssetSize: 1000000,
+    },
 });

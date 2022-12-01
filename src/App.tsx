@@ -1,4 +1,6 @@
 import { lazy, Suspense, useState } from "react";
+import { Button } from "antd";
+import "antd/dist/reset.css";
 
 // prefetch
 const PreFetchDemo = lazy(
@@ -31,6 +33,7 @@ function App() {
             {/* show为true时加载组件 */}
             {show && (
                 <>
+                    <Button type='primary'>Button</Button>
                     <Suspense fallback={null}>
                         <PreloadDemo />
                     </Suspense>

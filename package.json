@@ -12,6 +12,7 @@
     "build:test": "cross-env NODE_ENV=production BASE_ENV=test webpack -c build/webpack.prod.js",
     "build:pre": "cross-env NODE_ENV=production BASE_ENV=pre webpack -c build/webpack.prod.js",
     "build:prod": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.prod.js",
+    "analy": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.analy.js",
     "eslint": "eslint --max-warnings=0",
     "pre-check": "tsc && npx lint-staged",
     "stylelint": "stylelint"
@@ -21,8 +22,8 @@
       "npm run eslint"
     ],
     "src/**/*.{css,less,scss}": [
-        "npm run stylelint"
-      ]
+      "npm run stylelint"
+    ]
   },
   "config": {
     "commitizen": {
@@ -86,6 +87,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "antd": "^5.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
