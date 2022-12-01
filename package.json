@@ -13,18 +13,22 @@
     "build:pre": "cross-env NODE_ENV=production BASE_ENV=pre webpack -c build/webpack.prod.js",
     "build:prod": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.prod.js",
     "eslint": "eslint --max-warnings=0",
-    "pre-check": "tsc && npx lint-staged"
+    "pre-check": "tsc && npx lint-staged",
+    "stylelint": "stylelint"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "npm run eslint"
-    ]
+    ],
+    "src/**/*.{css,less,scss}": [
+        "npm run stylelint"
+      ]
   },
   "config": {
     "commitizen": {
-        "path": "./node_modules/cz-customizable"
+      "path": "./node_modules/cz-customizable"
     }
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -67,6 +71,11 @@
     "react-refresh": "^0.14.0",
     "speed-measure-webpack-plugin": "^1.5.0",
     "style-loader": "^3.3.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-less": "^1.0.6",
+    "stylelint-order": "^5.0.0",
     "terser-webpack-plugin": "^5.3.6",
     "thread-loader": "^3.0.4",
     "typescript": "^4.9.3",

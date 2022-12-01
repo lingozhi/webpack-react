@@ -1,4 +1,10 @@
-h2 {
-    color: red;
-    transform: translateY(100px);
+.app-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-color: #282c34;
 }

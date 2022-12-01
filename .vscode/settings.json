@@ -1,18 +1,24 @@
 {
-  "vetur.format.options.tabSize": 4,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "files.exclude": {
-    // "**/.git": true,
-    // "**/yarn.lock": true
-    // "**/dist": true,
-    // "**/build": true,
-    // "**/webpack.config.js": true,
-    // "**/.babelrc": true
-    // "**/node_modules": true
-    // "**/.gitignore": true,
-    // "**/_dll_vendors": true
-  }
+    "vetur.format.options.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true // 开启stylelint自动修复
+    },
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    // 配置stylelint检查的文件类型范围
+    "stylelint.validate": ["css", "less", "postcss", "scss", "sass", "vue"],
+    "files.exclude": {
+        // "**/.git": true,
+        // "**/yarn.lock": true
+        // "**/dist": true,
+        // "**/build": true,
+        // "**/webpack.config.js": true,
+        // "**/.babelrc": true
+        // "**/node_modules": true
+        // "**/.gitignore": true,
+        // "**/_dll_vendors": true
+    }
 }

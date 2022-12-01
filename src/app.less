@@ -1,16 +1,12 @@
+@height: 200px;
 
-  #root {
-    p {
-      font-size: 20px;
+​#root {
+    .App {
+        display: block;
+        height: @height;
     }
-    .smallImg {
-      width: 69px;
-      height: 75px;
-      background: url('./assets/imgs/a.png') no-repeat;
-    }
-    .bigImg {
-      width: 232px;
-      height: 154px;
-      background: url('./assets/imgs/b.png') no-repeat;
-    }
-  }
+}
+
+.rounded-corners {
+    border-radius: 5px;
+}
